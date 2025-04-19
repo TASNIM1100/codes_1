@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tic Tac Toe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="home-page">
+
+  <!-- Glowing Title -->
+  <h1 class="glow">TIC TAC TOE</h1>
+
+  <!-- Glowing Tic Tac Toe Box on Home Page -->
+  <div class="home-box-glow">
+    <div class="glow-board">
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+      <div class="glow-cell"></div>
+    </div>
+  </div>
+
+  <!-- Mode Selection Buttons -->
+  <div id="modeButtons">
+    <button onclick="startGame('friend')">Play with Friend</button>
+    <button onclick="startGame('computer')">Play with Computer</button>
+  </div>
+
+  <!-- Choose who starts -->
+  <div id="chooseFirstContainer" style="display: none;"></div>
+
+  <!-- Home Button -->
+  <button id="homeBtn" onclick="goHome()" style="display: none;">HOME</button>
+
+  <!-- Game Area -->
+  <div id="gameArea" style="display: none;">
+    <div id="mainGame">
+      <div id="board"></div>
+      <div id="status"></div>
+      <button id="restartBtn" onclick="restartGame()">🔄 Restart</button>
+    </div>
+
+    <!-- Scoreboard -->
+    <div id="rightScore">
+      <div id="scoreboard"></div>
+    </div>
+  </div>
+  <div id="bigSymbolsContainer">
+    <div class="bigSymbol glowing-x">X</div>
+    <div class="bigSymbol glowing-o">O</div>
+    <div class="bigSymbol glowing-x">X</div>
+    <div class="bigSymbol glowing-o">O</div>
+    <div class="bigSymbol glowing-x">X</div>
+  </div>
+  
+  
+  <script src="script.js"></script>
+</body>
+</html>
